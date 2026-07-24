@@ -19,6 +19,7 @@ export const DIALOGUES: Dialogue[] = [
     hide: 0.3,
     quote: "Users remember beautiful interfaces. Systems remember reliable backends. I build what never breaks when the world depends on it.",
     speaker: "Precision & Reliability",
+    film: string,
   },
   {
     id: "d2",
@@ -26,6 +27,7 @@ export const DIALOGUES: Dialogue[] = [
     hide: 0.55,
     quote: "The strongest code is rarely seen. Every API, database, and server is a promise that every request will be answered with precision.",
     speaker: "Invisible Strength",
+    film: string,
   },
   {
     id: "d3",
@@ -33,6 +35,7 @@ export const DIALOGUES: Dialogue[] = [
     hide: 0.8,
     quote: "Backend development isn't about writing code—it's about designing trust, where every request, every byte, and every millisecond has a purpose.",
     speaker: "Engineering Mindset",
+    film: string,
   },
 ];
 
