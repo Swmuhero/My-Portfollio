@@ -19,17 +19,14 @@ export function SystemsNominal() {
       <div className="mx-auto flex max-w-[1400px] flex-col gap-16 md:grid md:grid-cols-[5fr_4fr] md:gap-20">
         <AnimatedSection className="flex flex-col gap-8">
           <AnimatedItem>
-            <EyebrowBadge>Swapneel // Developer</EyebrowBadge>
-          </AnimatedItem>
-          <AnimatedItem>
             <h2 className="max-w-[16ch] font-sans text-4xl font-semibold leading-[0.98] tracking-tighter text-foreground md:text-6xl">
-              Educational 
-               <span className="text-accent"> Qualification</span>
+              This is me 
+               <span className="text-accent"> Swapneel Mukherjee</span>
             </h2>
           </AnimatedItem>
           <AnimatedItem>
             <p className="max-w-[48ch] font-sans text-base leading-relaxed text-zinc-400 md:text-lg">
-              I am currently pursuing a Diploma in Computer Science & Technology at New Horizon Institute of Technology, where I have maintained a 9.8 CGPA. I completed my Secondary Education from St. Francis Xavier English Medium School, Andal, securing 80.0%. To further strengthen my technical foundation, I plan to pursue a B.Tech in Computer Science at IEM, with the goal of deepening my expertise in software engineering, backend development, and scalable system design.
+              I build secure, scalable, and high-performance backend systems that power seamless digital experiences. Passionate about designing robust APIs, optimized databases, and architecting reliable server-side solutions. I focus on writing clean, maintainable code that transforms complex challenges into efficient, production-ready applications.
             </p>
           </AnimatedItem>
           <AnimatedItem>
@@ -47,8 +44,12 @@ export function SystemsNominal() {
           </AnimatedItem>
         </AnimatedSection>
 
-        <AnimatedSection className="flex flex-col divide-y divide-white/8 border-t border-white/8 font-mono md:mt-3">
-          {telemetry.map((row) => (
+        <AnimatedSection className="flex flex-col gap-8">
+          <AnimatedItem>
+            <EyebrowBadge>Educational Qualifications</EyebrowBadge>
+          </AnimatedItem>
+          <div className="flex flex-col divide-y divide-white/8 border-t border-white/8 font-mono">
+            {telemetry.map((row) => (
             <AnimatedItem key={row.label}>
               <div className="flex items-baseline justify-between gap-6 py-5">
                 <div className="flex flex-col gap-1">
@@ -65,6 +66,7 @@ export function SystemsNominal() {
               </div>
             </AnimatedItem>
           ))}
+          </div>
         </AnimatedSection>
       </div>
     </section>

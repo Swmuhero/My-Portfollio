@@ -230,7 +230,7 @@ export function CinematicReveal() {
               className="font-sans text-4xl font-semibold leading-[0.98] tracking-tighter text-foreground md:text-6xl lg:text-7xl"
               style={{ transition: "opacity 240ms ease-out" }}
             >
-              I am
+              I am an
               <br />
               <span className="text-accent">AI ENTHUSIAST.</span>
             </h2>
@@ -239,9 +239,9 @@ export function CinematicReveal() {
               className="absolute inset-0 font-sans text-4xl font-semibold leading-[0.98] tracking-tighter text-foreground md:text-6xl lg:text-7xl"
               style={{ opacity: 0, transition: "opacity 240ms ease-out" }}
             >
-              And I am
-              <br />
-              <span className="text-accent">ENGINEER.</span>
+              And I am also 
+              <br/>
+              an <span className="text-accent">ENGINEER.</span>
             </h2>
           </div>
           <p className="max-w-[42ch] font-sans text-sm leading-relaxed text-zinc-400 md:text-base">

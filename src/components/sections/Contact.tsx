@@ -60,7 +60,7 @@ export function Contact() {
 
           <AnimatedItem>
             <h2 className="max-w-[12ch] font-sans text-4xl font-semibold leading-[0.98] tracking-tighter text-foreground md:text-6xl">
-              Contact <span className="text-accent">Me.</span>
+              Stay in <span className="text-accent">Touch</span>
             </h2>
           </AnimatedItem>
 
