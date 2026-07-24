@@ -42,10 +42,16 @@ export function Navbar() {
             Education
           </a>
           <a
-            href="#footer"
+            href="#projects"
             className="font-mono text-[11px] uppercase tracking-[0.24em] text-zinc-400 transition-colors hover:text-foreground"
           >
             Projects
+          </a>
+          <a
+            href="#contact"
+            className="font-mono text-[11px] uppercase tracking-[0.24em] text-zinc-400 transition-colors hover:text-foreground"
+          >
+            Contact
           </a>
         </nav>
 

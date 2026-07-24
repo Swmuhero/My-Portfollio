@@ -1,62 +1,282 @@
-import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
+import {
+  ArrowUpRight,
+  BracketsCurly,
+  Database,
+  EnvelopeSimple,
+  GitBranch,
+  GithubLogo,
+  LinkedinLogo,
+  Phone,
+} from "@phosphor-icons/react/dist/ssr";
+
+const projects = [
+  {
+    name: "E-Commerce Backend API",
+    languages: ["Node.js", "Express.js", "MongoDB"],
+    description:
+      "A secure commerce backend with product catalogs, user authentication, cart workflows, and order-ready API architecture.",
+    Icon: Database,
+    href: "https://www.google.com/",
+  },
+  {
+    name: "Real-Time Chat Service",
+    languages: ["Node.js", "Socket.IO", "JavaScript"],
+    description:
+      "A realtime messaging service designed for low-latency events, online presence, room channels, and clean client-server contracts.",
+    Icon: GitBranch,
+    href: "https://www.youtube.com/",
+  },
+  {
+    name: "Auth & Access Control",
+    languages: ["Express.js", "JWT", "Bcrypt"],
+    description:
+      "Reusable authentication flows with protected routes, password hashing, role checks, and middleware built for production APIs.",
+    Icon: BracketsCurly,
+    href: "https://dogstudio.co/",
+  },
+  {
+    name: "AI Utility Backend",
+    languages: ["Python", "REST APIs", "SQL"],
+    description:
+      "A service layer for AI-assisted features, structured data storage, API orchestration, and reliable request handling.",
+    Icon: Database,
+    href: "https://www.hellomonday.com/",
+  },
+] as const;
+
+const footerLinks = [
+  { label: "Education", href: "#systems" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
+] as const;
+
+const socialLinks = [
+  {
+    label: "GitHub",
+    href: "https://github.com/Swmuhero",
+    Icon: GithubLogo,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/swapneel-mukherjee-a27516307/",
+    Icon: LinkedinLogo,
+  },
+  {
+    label: "Email",
+    href: "mailto:swapneel793@gmail.com",
+    Icon: EnvelopeSimple,
+  },
+  {
+    label: "Call",
+    href: "tel:+918972216611",
+    Icon: Phone,
+  },
+] as const;
 
 export function Footer() {
   return (
-    <footer
-      id="footer"
-      className="border-t border-white/5 bg-background px-6 py-14 md:px-10 md:py-16"
+    <section
+      id="projects"
+      className="relative overflow-hidden border-t border-white/5 bg-background px-6 pb-0 pt-24 md:px-10 md:pt-32"
     >
-      <div className="mx-auto flex max-w-[1400px] flex-col gap-10">
-        <div className="flex flex-col justify-between gap-8 md:flex-row md:items-start">
-          <div className="flex flex-col gap-3">
-            <div className="flex items-center gap-2.5 font-mono text-[11px] font-semibold uppercase tracking-[0.32em] text-foreground">
+      <div className="hud-tick pointer-events-none absolute inset-0 opacity-[0.025]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
+
+      <div className="relative mx-auto flex max-w-[1400px] flex-col gap-14">
+        <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+          <div className="flex max-w-[620px] flex-col gap-5">
+            <div className="flex items-center gap-2.5 font-mono text-[11px] font-semibold uppercase tracking-[0.28em] text-accent">
               <span
                 aria-hidden
                 className="inline-block h-2 w-2 rounded-full bg-accent shadow-[0_0_12px_rgba(212,162,47,0.9)]"
               />
-             Swapneel Mukherjee // Backend Developer
+              Projects // Backend Builds
             </div>
-            <p className="max-w-[38ch] font-sans text-sm leading-relaxed text-zinc-400">
-              &copy; I am a Backend Developer &mdash; with NodeJs ,ExpressJs.
-              Have worked on many real time projects &amp; Designs.
+            <h2 className="font-sans text-4xl font-semibold leading-[0.98] tracking-tighter text-foreground md:text-6xl">
+              Projects <span className="text-accent"> Build</span>
+            </h2>
+            <p className="font-sans text-base leading-relaxed text-zinc-400 md:text-lg">
+              Backend-focused work shaped around practical APIs, database
+              design, authentication, realtime systems, and service
+              architecture.
             </p>
           </div>
 
-          <nav className="grid grid-cols-2 gap-x-10 gap-y-3 md:grid-cols-3">
-            {[
-              ["Project I", "Cave, Afghanistan"],
-              ["Project II", "Monaco Circuit"],
-              ["Project III", "Stark Tower"],
-              ["Project IV", "Hulkbuster"],
-              ["Project V", "Titan"],
-            ].map(([name, note]) => (
-              <a
-                key={name}
-                href="#"
-                className="group flex flex-col gap-1"
-              >
-                <span className="font-sans text-[13px] font-medium text-foreground transition-colors group-hover:text-accent">
-                  {name}
-                  <ArrowUpRight
-                    size={11}
-                    weight="bold"
-                    className="ml-1 inline-block align-baseline opacity-0 transition-opacity group-hover:opacity-100"
-                  />
-                </span>
-                <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
-                  {note}
-                </span>
-              </a>
-            ))}
-          </nav>
+          <a
+            href="https://github.com/Swmuhero"
+            target="_blank"
+            rel="noreferrer"
+            className="group inline-flex w-fit items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 font-mono text-[11px] font-medium uppercase tracking-[0.22em] text-foreground backdrop-blur-md transition-all duration-200 hover:border-accent/40 hover:bg-white/[0.08] active:translate-y-[1px]"
+          >
+            GitHub Profile
+            <ArrowUpRight
+              size={14}
+              weight="bold"
+              className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+            />
+          </a>
         </div>
 
-        <div className="flex flex-col gap-2 border-t border-white/5 pt-6 font-mono text-[10px]  tracking-[0.28em] text-zinc-500 md:flex-row md:items-center md:justify-between">
-          <span>SWAPNEEL MUKHERJEE &nbsp;&middot;&nbsp; DEVELOPER &nbsp;&middot;&nbsp;ENGINEER</span>
-          <span>+91 8972216611 // swapneel793@gmail.com</span>
-          <span>PROOF OF CONSEPTS &mdash; PROJECTS, and ARCHITECTURE</span>
+        <div className="grid gap-4 md:grid-cols-2">
+          {projects.map(({ name, languages, description, Icon, href }, index) => {
+            const isLinkedProject = href !== undefined;
+            const projectContent = (
+              <>
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-accent/0 via-accent/60 to-accent/0 opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
+                <div className="flex h-full flex-col justify-between gap-10">
+                  <div className="flex items-start justify-between gap-5">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-[8px] border border-accent/30 bg-accent-soft text-accent shadow-[0_0_22px_-10px_rgba(212,162,47,0.85)]">
+                      <Icon size={21} weight="bold" />
+                    </span>
+                    <span className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500">
+                      Project {String(index + 1).padStart(2, "0")}
+                      {isLinkedProject && (
+                        <ArrowUpRight
+                          size={13}
+                          weight="bold"
+                          className="opacity-0 transition-all duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent group-hover:opacity-100"
+                        />
+                      )}
+                    </span>
+                  </div>
+
+                  <div>
+                    <h3 className="max-w-[18ch] font-sans text-2xl font-semibold leading-tight tracking-tight text-foreground md:text-3xl">
+                      {name}
+                    </h3>
+                    <p className="mt-4 max-w-[56ch] font-sans text-sm leading-relaxed text-zinc-400 md:text-base">
+                      {description}
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2">
+                    {languages.map((language) => (
+                      <span
+                        key={language}
+                        className="rounded-full border border-white/10 bg-black/20 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.18em] text-zinc-300"
+                      >
+                        {language}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </>
+            );
+            const projectClassName =
+              "group relative min-h-[280px] overflow-hidden rounded-[8px] border border-white/10 bg-white/[0.035] p-5 transition-all duration-200 hover:-translate-y-1 hover:border-accent/40 hover:bg-white/[0.06] md:p-6";
+
+            if (isLinkedProject) {
+              return (
+                <a
+                  key={name}
+                  href={href}
+                  aria-label={`Open ${name}`}
+                  className={`${projectClassName} block focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/70`}
+                >
+                  {projectContent}
+                </a>
+              );
+            }
+
+            return (
+              <article key={name} className={projectClassName}>
+                {projectContent}
+              </article>
+            );
+          })}
         </div>
       </div>
-    </footer>
+
+      <footer
+        id="footer"
+        className="relative -mx-6 mt-14 overflow-hidden border-y border-white/10 bg-white/[0.035] md:-mx-10"
+      >
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/60 to-transparent" />
+
+        <div className="mx-auto max-w-[1400px]">
+          <div className="grid gap-10 p-6 md:grid-cols-[1.4fr_1fr_1fr] md:p-8">
+            <div className="flex flex-col gap-5">
+              <div className="flex items-center gap-2.5 font-mono text-[11px] font-semibold uppercase tracking-[0.28em] text-accent">
+                <span
+                  aria-hidden
+                  className="inline-block h-2 w-2 rounded-full bg-accent shadow-[0_0_12px_rgba(212,162,47,0.9)]"
+                />
+                Swapneel Mukherjee
+              </div>
+              <p className="max-w-[42ch] font-sans text-sm leading-relaxed text-zinc-400 md:text-base">
+                Backend Developer focused on clean APIs, scalable server-side
+                systems, authentication flows, and database-backed products.
+              </p>
+              <a
+                href="mailto:swapneel793@gmail.com"
+                className="group inline-flex w-fit items-center gap-2 rounded-full border border-white/15 bg-black/20 px-4 py-2 font-mono text-[10px] font-medium uppercase tracking-[0.2em] text-foreground transition-all duration-200 hover:border-accent/40 hover:bg-white/[0.06]"
+              >
+                Start a conversation
+                <ArrowUpRight
+                  size={13}
+                  weight="bold"
+                  className="transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                />
+              </a>
+            </div>
+
+            <nav className="flex flex-col gap-4">
+              <span className="font-mono text-[10px] uppercase tracking-[0.28em] text-zinc-500">
+                Navigate
+              </span>
+              <div className="flex flex-col gap-3">
+                {footerLinks.map((link) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    className="group flex w-fit items-center gap-2 font-mono text-[11px] uppercase tracking-[0.22em] text-zinc-300 transition-colors hover:text-accent"
+                  >
+                    {link.label}
+                    <ArrowUpRight
+                      size={11}
+                      weight="bold"
+                      className="opacity-0 transition-all duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:opacity-100"
+                    />
+                  </a>
+                ))}
+              </div>
+            </nav>
+
+            <div className="flex flex-col gap-4">
+              <span className="font-mono text-[10px] uppercase tracking-[0.28em] text-zinc-500">
+                Connect
+              </span>
+              <div className="grid grid-cols-2 gap-3">
+                {socialLinks.map(({ label, href, Icon }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target={href.startsWith("http") ? "_blank" : undefined}
+                    rel={href.startsWith("http") ? "noreferrer" : undefined}
+                    aria-label={label}
+                    className="group flex items-center gap-2 rounded-[8px] border border-white/10 bg-black/20 px-3 py-2.5 font-mono text-[10px] uppercase tracking-[0.18em] text-zinc-300 transition-all duration-200 hover:border-accent/40 hover:bg-white/[0.06] hover:text-accent"
+                  >
+                    <Icon size={15} weight="bold" />
+                    {label}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-2 border-t border-white/8 px-6 py-5 font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-500 md:flex-row md:items-center md:justify-between md:px-8">
+            <span>&copy; 2026 Swapneel Mukherjee</span>
+            <span>Node.js // Express.js // MongoDB</span>
+            <div className="flex items-center gap-2 text-accent">
+              <span
+                aria-hidden
+                className="inline-block h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_10px_rgba(212,162,47,0.85)]"
+              />
+              Available for collaboration
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
   );
 }

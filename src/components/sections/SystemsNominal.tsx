@@ -34,7 +34,7 @@ export function SystemsNominal() {
           </AnimatedItem>
           <AnimatedItem>
             <a
-              href="#footer"
+              href="#projects"
               className="group inline-flex items-center gap-2 self-start rounded-full border border-white/15 bg-white/[0.04] px-5 py-2.5 font-mono text-[11px] font-medium uppercase tracking-[0.22em] text-foreground backdrop-blur-md transition-all duration-200 hover:bg-white/[0.08] active:translate-y-[1px]"
             >
               Projects

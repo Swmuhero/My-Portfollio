@@ -278,8 +278,7 @@ export function Hero() {
             />
           </div>
           <div className="mx-6 flex items-center justify-between pb-4 font-mono text-[10px] uppercase tracking-[0.28em] text-zinc-500 md:mx-10">
-            <span>Swapneel </span>
-            <span>Backend Developer // DSA</span>
+            <span>Swapneel Mukherjee // developer</span>
             <span>Scroll &darr;</span>
           </div>
         </div>

@@ -279,7 +279,6 @@ export function CinematicReveal() {
           </div>
           <div className="mx-6 flex items-center justify-between pb-4 font-mono text-[10px] uppercase tracking-[0.28em] text-zinc-500 md:mx-10">
             <span>Swapneel Mukherjee // developer</span>
-            <span>+91 8972216611 // swapneel793gmail.com</span>
             <span>Scroll &darr;</span>
           </div>
         </div>
@@ -373,7 +372,7 @@ export function CinematicReveal() {
               />
             </div>
             <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-zinc-500">
-              Rendering Mark III &nbsp;&middot;&nbsp; {Math.round(loadProgress * 100)}%
+              Loading Swapneel`s portfollio &nbsp;&middot;&nbsp; {Math.round(loadProgress * 100)}%
             </p>
           </div>
         )}

@@ -29,7 +29,7 @@ export const BEATS: Beat[] = [
     hide: 0.55,
     label: "Skills — Archived",
     quote: "Python, Java",
-    speaker: "Seconday Skill",
+    speaker: "Secondary Skill",
     film: "Swapneel",
   },
   {
@@ -38,7 +38,7 @@ export const BEATS: Beat[] = [
     hide: 0.8,
     label: "Skills — Archived",
     quote: "AI/ML",
-    speaker: "Tersiary Skill",
+    speaker: "Tertiary Skill",
     film: "Swapneel",
   },
 ];
