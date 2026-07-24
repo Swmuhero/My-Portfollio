@@ -93,7 +93,7 @@ export function Footer() {
               Projects // Backend Builds
             </div>
             <h2 className="font-sans text-4xl font-semibold leading-[0.98] tracking-tighter text-foreground md:text-6xl">
-              Projects <span className="text-accent"> Build</span>
+            <span className="text-accent"> Projects</span>
             </h2>
             <p className="font-sans text-base leading-relaxed text-zinc-400 md:text-lg">
               Backend-focused work shaped around practical APIs, database
@@ -207,17 +207,6 @@ export function Footer() {
                 Backend Developer focused on clean APIs, scalable server-side
                 systems, authentication flows, and database-backed products.
               </p>
-              <a
-                href="mailto:swapneel793@gmail.com"
-                className="group inline-flex w-fit items-center gap-2 rounded-full border border-white/15 bg-black/20 px-4 py-2 font-mono text-[10px] font-medium uppercase tracking-[0.2em] text-foreground transition-all duration-200 hover:border-accent/40 hover:bg-white/[0.06]"
-              >
-                Start a conversation
-                <ArrowUpRight
-                  size={13}
-                  weight="bold"
-                  className="transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-                />
-              </a>
             </div>
 
             <nav className="flex flex-col gap-4">

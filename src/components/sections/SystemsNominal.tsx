@@ -23,13 +23,13 @@ export function SystemsNominal() {
           </AnimatedItem>
           <AnimatedItem>
             <h2 className="max-w-[16ch] font-sans text-4xl font-semibold leading-[0.98] tracking-tighter text-foreground md:text-6xl">
-              &ldquo;And I&hellip; am&hellip;{" "}
-              <span className="text-accent">Swapneel Mukherjee</span>&rdquo;
+              Educational 
+               <span className="text-accent"> Qualification</span>
             </h2>
           </AnimatedItem>
           <AnimatedItem>
             <p className="max-w-[48ch] font-sans text-base leading-relaxed text-zinc-400 md:text-lg">
-              Backend Developer passionate about building secure, scalable, and high-performance web applications. I specialize in designing RESTful APIs, managing databases, and developing robust server-side architectures using Node.js, Express.js, and MongoDB. I enjoy solving complex problems, optimizing application performance, and creating reliable systems that power seamless user experiences.
+              I am currently pursuing a Diploma in Computer Science & Technology at New Horizon Institute of Technology, where I have maintained a 9.8 CGPA. I completed my Secondary Education from St. Francis Xavier English Medium School, Andal, securing 80.0%. To further strengthen my technical foundation, I plan to pursue a B.Tech in Computer Science at IEM, with the goal of deepening my expertise in software engineering, backend development, and scalable system design.
             </p>
           </AnimatedItem>
           <AnimatedItem>

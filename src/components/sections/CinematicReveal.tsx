@@ -232,7 +232,7 @@ export function CinematicReveal() {
             >
               I am
               <br />
-              <span className="text-accent">DEVELOPER.</span>
+              <span className="text-accent">AI ENTHUSIAST.</span>
             </h2>
             <h2
               ref={h2IronManRef}
