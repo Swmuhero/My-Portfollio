@@ -1,9 +1,11 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import NextImage from "next/image";
 import { EyebrowBadge } from "@/components/ui/EyebrowBadge";
 import { HudFrame } from "@/components/ui/HudFrame";
 import { DIALOGUES, FRAME_COUNT, HERO_TEXT_FADE_END, framePath } from "@/lib/hero";
+import profilePhoto from "./image.png";
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -216,18 +218,37 @@ export function Hero() {
 
         <div
           ref={heroTextRef}
-          className="absolute inset-x-0 bottom-0 z-10 flex flex-col items-start gap-5 px-6 pb-24 md:px-12 md:pb-28"
+          className="absolute inset-x-0 bottom-0 z-10 px-6 pb-24 md:px-12 md:pb-28"
           style={{ transition: "opacity 80ms linear" }}
         >
-          <EyebrowBadge>NodeJs // JavaScript // Express</EyebrowBadge>
-          <h1 className="max-w-[14ch] font-sans text-5xl font-semibold leading-[0.95] tracking-tighter text-foreground md:text-7xl lg:text-8xl">
-            I am
-            <br />
-            <span className="text-accent">Swapneel Mukherjee.</span>
-          </h1>
-          <p className="max-w-[42ch] font-sans text-sm leading-relaxed text-zinc-400 md:text-base">
-            I am a backend developer with a passion for building robust and scalable systems. My expertise lies in designing and implementing efficient APIs, optimizing database performance, and ensuring seamless integration between various components of a software ecosystem. I thrive in collaborative environments where I can contribute to innovative projects and continuously enhance my skills.
-          </p>
+          <div className="mx-auto grid max-w-[1400px] grid-cols-[minmax(0,1fr)_84px] items-end gap-5 sm:grid-cols-[minmax(0,1fr)_132px] md:grid-cols-[minmax(0,1fr)_205px] lg:grid-cols-[minmax(0,1fr)_320px] lg:gap-12">
+            <div className="flex min-w-0 flex-col items-start gap-5">
+              <EyebrowBadge>NodeJs // JavaScript // Express</EyebrowBadge>
+              <h1 className="max-w-[12ch] font-sans text-4xl font-semibold leading-[0.95] tracking-tighter text-foreground sm:text-5xl md:text-7xl lg:text-8xl">
+                I am
+                <br />
+                <span className="text-accent">Swapneel Mukherjee.</span>
+              </h1>
+              <p className="hidden max-w-[42ch] font-sans text-sm leading-relaxed text-zinc-400 sm:block md:text-base">
+                I am a backend developer with a passion for building robust and scalable systems. My expertise lies in designing and implementing efficient APIs, optimizing database performance, and ensuring seamless integration between various components of a software ecosystem.
+              </p>
+            </div>
+
+            <div className="relative justify-self-end">
+              <div className="pointer-events-none absolute -inset-3 border border-accent/25 opacity-70" />
+              <div className="relative overflow-hidden rounded-[8px] border border-white/10 bg-black shadow-2xl shadow-black/50">
+                <NextImage
+                  src={profilePhoto}
+                  alt="Swapneel Mukherjee"
+                  priority
+                  sizes="(min-width: 1024px) 320px, (min-width: 768px) 205px, (min-width: 640px) 132px, 84px"
+                  className="aspect-[4/5] w-full object-cover object-[56%_center]"
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-white/[0.04]" />
+                <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/10" />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div

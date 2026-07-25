@@ -36,12 +36,6 @@ export function Navbar() {
 
         <nav className="hidden items-center gap-8 md:flex">
           <a
-            href="#about"
-            className="font-mono text-[11px] uppercase tracking-[0.24em] text-zinc-400 transition-colors hover:text-foreground"
-          >
-            About Me
-          </a>
-          <a
             href="#systems"
             className="font-mono text-[11px] uppercase tracking-[0.24em] text-zinc-400 transition-colors hover:text-foreground"
           >
@@ -62,10 +56,10 @@ export function Navbar() {
         </nav>
 
         <a
-          href="#about"
+          href="#projects"
           className="group inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.05] px-4 py-2 font-mono text-[11px] font-medium uppercase tracking-[0.22em] text-foreground backdrop-blur-md transition-all duration-200 hover:bg-white/[0.1] active:translate-y-[1px]"
         >
-          About Me
+          Projects
           <ArrowUpRight
             size={14}
             weight="bold"
