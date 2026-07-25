@@ -34,13 +34,20 @@ export function SystemsNominal() {
 
   useEffect(() => {
     const body = document.body;
-    if (allCertificatesOpen || selectedDialogCertificate) {
+    const html = document.documentElement;
+    const shouldHide = allCertificatesOpen || selectedDialogCertificate;
+
+    if (shouldHide) {
       body.style.overflow = "hidden";
+      html.style.overflow = "hidden";
     } else {
       body.style.overflow = "";
+      html.style.overflow = "";
     }
+
     return () => {
       body.style.overflow = "";
+      html.style.overflow = "";
     };
   }, [allCertificatesOpen, selectedDialogCertificate]);
 
@@ -198,7 +205,7 @@ export function SystemsNominal() {
                 }}
               >
                 <div
-                  className="relative max-h-full w-full max-w-[95vw] overflow-hidden rounded-[2rem] bg-[#070708] p-6 shadow-2xl shadow-black/50"
+                  className="relative max-h-[calc(100vh-4rem)] w-full max-w-[95vw] overflow-hidden rounded-[2rem] bg-[#070708] p-6 shadow-2xl shadow-black/50"
                   onClick={(event) => event.stopPropagation()}
                 >
                   <div className="mb-6 flex items-center justify-between gap-4">
