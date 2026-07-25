@@ -10,12 +10,12 @@ export function FinalCTA() {
 
       <div className="mx-auto max-w-[1400px] flex flex-col items-center gap-8 text-center">
         <h2 className="font-sans text-4xl font-semibold leading-[1.1] tracking-tighter text-foreground md:text-6xl">
-          Let's build the incredible
+          Let&apos;s build the incredible
           <span className="text-accent"> next-gen website!</span>
         </h2>
 
         <p className="max-w-[56ch] font-sans text-sm leading-relaxed text-zinc-400 md:text-base">
-          Available anytime to catch up with you. We're just one click away.
+          Available anytime to catch up with you. We&apos;re just one click away.
         </p>
 
         <a

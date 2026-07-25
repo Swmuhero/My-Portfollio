@@ -45,6 +45,57 @@ body {
     0 20px 40px -20px rgba(0, 0, 0, 0.6);
 }
 
+.certificates-track {
+  display: flex;
+  animation: scrollCertificates 18s linear infinite;
+  min-width: max-content;
+  padding: 1rem 0;
+}
+
+.certificates-track.paused {
+  animation-play-state: paused;
+}
+
+.certificate-item {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.35s ease, filter 0.35s ease;
+  animation: itemRotate 12s ease-in-out infinite alternate;
+}
+
+.certificate-item:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+}
+
+.certificate-item.blur-sm {
+  filter: blur(3px);
+}
+
+.certificate-item img {
+  display: block;
+}
+
+@keyframes itemRotate {
+  from {
+    transform: rotate(-1deg);
+  }
+  to {
+    transform: rotate(1deg);
+  }
+}
+
+.certificate-item img {
+  display: block;
+}
+
+@keyframes scrollCertificates {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .scroll-animation {
   height: 400vh;
 }
