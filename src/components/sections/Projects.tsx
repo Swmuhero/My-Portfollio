@@ -8,7 +8,7 @@ import {
 const projects = [
   {
     name: "Train Tracking",
-    languages: ["Node.js", "Express.js", "TypeScript"],
+    languages: ["Node.js", "Express.js", "TypeScript", "NextJS"],
     description:
       "Live GPS tracking, delay analytics, route maps, and weather intelligence for every train across India.",
     Icon: Database,
