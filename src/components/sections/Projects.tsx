@@ -7,12 +7,12 @@ import {
 
 const projects = [
   {
-    name: "E-Commerce Backend API",
-    languages: ["Node.js", "Express.js", "MongoDB"],
+    name: "Train Tracking",
+    languages: ["Node.js", "Express.js", "TypeScript"],
     description:
-      "A secure commerce backend with product catalogs, user authentication, cart workflows, and order-ready API architecture.",
+      "Live GPS tracking, delay analytics, route maps, and weather intelligence for every train across India.",
     Icon: Database,
-    href: "https://www.google.com/",
+    href: "https://rail-gari.vercel.app/",
   },
   {
     name: "Real-Time Chat Service",
